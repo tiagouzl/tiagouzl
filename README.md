@@ -12,7 +12,7 @@ trusting an off-the-shelf abstraction.
 
 ## In production
 
-### Tyto
+### Sistema de Clínicas Médicas – T2
 
 Management platform for medical home care, built for T2 Empreendimentos
 Médicos Ltda. and in use across multiple municipalities in RN —
