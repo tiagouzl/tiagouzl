@@ -26,7 +26,7 @@ financial exports in the format each municipality requires, from the same
 internal data model, without duplicating the source of truth.
 
 Closed source under contract. Technical documentation and architecture
-decisions in [tyto-case-study](https://github.com/tiagouzl/tyto-case-study).
+decisions in [t2-case-study](https://github.com/tiagouzl/t2-case-study).
 
 ### Garbos-CRM
 
