@@ -12,21 +12,29 @@ trusting an off-the-shelf abstraction.
 
 ## In production
 
-### Sistema de Clínicas Médicas – T2
+### Sistema T2 — Home Care Management ERP
 
-Management platform for medical home care, built for T2 Empreendimentos
-Médicos Ltda. and in use across multiple municipalities in RN —
-solo development and maintenance.
+A vertical healthcare management platform for T2 Empreendimentos Médicos
+Ltda., used across multiple municipalities in Rio Grande do Norte. I was the
+sole developer responsible for its implementation and maintenance.
 
-The hardest challenge wasn't features, it was the usage context: field staff
-logging visits in municipalities where internet access is unreliable. Solved
-with an offline sync queue (IndexedDB) instead of just requiring a
-connection and pushing the problem back to paper. The system also generates
-financial exports in the format each municipality requires, from the same
-internal data model, without duplicating the source of truth.
+The product integrates operational, administrative, and financial workflows:
+municipal contracts and service rules, care production, attendance guides,
+shifts and schedules, field time tracking, patient and professional records,
+home visits, payments, and management reports. Its accurate category is a
+**vertical healthcare ERP specialized in Home Care** — not a CRM or a standalone
+BI product.
 
-Closed source under contract. Technical documentation and architecture
-decisions in [t2-case-study](https://github.com/tiagouzl/t2-case-study).
+A central engineering challenge was field operation in municipalities with
+unreliable connectivity. I implemented an offline synchronization queue with
+IndexedDB, allowing time records to be retained locally and synchronized when
+connectivity returns. The platform also applies municipality-specific
+presentation rules to reports while preserving internal operational data as
+the source of truth.
+
+Closed source under contract. The public case-study repository documents
+architecture and engineering decisions:
+[t2-case-study](https://github.com/tiagouzl/t2-case-study).
 
 ### Garbos-CRM
 
